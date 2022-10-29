@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #fcecdd;
+  --seconndary-color: #ffc288;
+  --text-color: #ff6701;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container img {
+  width: 50%;
+  height: 250px;
+  margin: 2rem 0;
+}
+
+input[type='number'] {
+  padding: 0.5rem 0.2rem;
+  font-size: 0.9rem;
+  margin: 1rem auto;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  text-align: right;
+  max-width: 350px;
+  width: 40%;
+}
+
+select {
+  border-radius: 5px;
+  margin: 1rem auto;
+  padding: 0.5rem 0.2rem;
+  border: 1px solid var(--text-color);
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--text-color);
+  outline: none;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container,
+footer {
+  text-align: center;
+  margin: 2rem;
+}
+
+@media only screen and (max-width: 499px) {
+  .container img {
+    width: 100%;
+  }
+}
